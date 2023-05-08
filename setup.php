@@ -25,16 +25,16 @@ function plugin_version_dashboard(){
 					'author'			   => '<a href="https://plugins.glpi-project.org/#/plugin/dashboard"> Stevenes Donato </b> </a>',
 					'license'		 	=> 'GPLv2+',
 					'homepage'			=> 'https://plugins.glpi-project.org/#/plugin/dashboard',
-					'minGlpiVersion'	=> '9.4'
+					'minGlpiVersion'	=> '10.0'
 					);
 }
 
 
 function plugin_dashboard_check_prerequisites(){
-     if (GLPI_VERSION >= 9.4){
+     if (GLPI_VERSION >= 10.0){
          return true;
      } else {
-         echo "GLPI version NOT compatible. Requires GLPI >= 9.4";
+         echo "GLPI version NOT compatible. Requires GLPI >= 10.0";
      }
 }
 
